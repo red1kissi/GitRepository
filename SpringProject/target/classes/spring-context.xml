@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+	   xmlns:context="http://www.springframework.org/schema/context"	
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xsi:schemaLocation="http://www.springframework.org/schema/beans
+           http://www.springframework.org/schema/beans/spring-beans.xsd
+           http://www.springframework.org/schema/context
+           http://www.springframework.org/schema/context/spring-context.xsd">
+           
+  <context:annotation-config />
+  <context:component-scan base-package="com.red1kissi" />         
+
+<!--   <bean id="object" class="com.red1kissi.model.SpringObject"> -->
+<!--   	<constructor-arg type="java.lang.String" value="KISSI" index="0"/> -->
+<!-- 	<property name="name" value="KISSI"/> -->
+<!-- 	<property name="collaborator" ref="collaboratorObject" />   -->
+<!--   </bean> -->
+  
+  <bean id="collaborator" class="com.red1kissi.model.Collaborator">
+  	<property name="name" value="myCollaborator"/>
+  </bean>
+  
+      
+    
+  <!-- The different kinds of injection -->
+
+</beans>
